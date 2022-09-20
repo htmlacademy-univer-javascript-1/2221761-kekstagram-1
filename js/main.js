@@ -8,10 +8,7 @@ function getRandomNumber(min, max){
 getRandomNumber(2, 11);
 
 function checkStringLength(testToString, maxLength){
-  if (testToString.length < maxLength){
-    return true;
-  }
-  return false;
+  return testToString.length < maxLength;
 }
 
 checkStringLength('qwerty', 45);
