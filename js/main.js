@@ -42,8 +42,8 @@ const commentArray = (count) => {
       avatar: `img/avatar-${getRandomPositiveInteger(1,6)}.svg`,
       message: MESSAGES[getRandomPositiveInteger(0, MESSAGES.length - 1)],
       name: NAMES[getRandomPositiveInteger(0, NAMES.lenght - 1)]
-    })
-  }
+    });
+  };
   return array;
 };
 
@@ -56,8 +56,8 @@ const addPhotos = () => {
       description: DESCRIPTION[getRandomPositiveInteger(0, DESCRIPTION.length - 1)],
       likes: getRandomPositiveInteger(15, 200),
       comments: commentArray(getRandomPositiveInteger(0, 2))
-    })
-  }
+    });
+  };
 };
 
 addPhotos();
