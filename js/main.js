@@ -1,4 +1,7 @@
 const COUNT = 25;
+const MIN_COUNT_LIKE = 15;
+const MAX_COUNT_LIKE = 200;
+const COMMENTS_COUNT = 5;
 
 const NAMES = [
   'Лука',
@@ -39,7 +42,7 @@ const commentArray = (count) => {
   for (let i = 0; i < count; i++) {
     array.push({
       id: i,
-      avatar: `img/avatar-${getRandomPositiveInteger(1,6)}.svg`,
+      avatar: `img/avatar-${getRandomPositiveInteger()}.svg`,
       message: MESSAGES[getRandomPositiveInteger(0, MESSAGES.length - 1)],
       name: NAMES[getRandomPositiveInteger(0, NAMES.lenght - 1)]
     });
@@ -54,8 +57,8 @@ const addPhotos = () => {
       id: i,
       url: `photos/${i + 1}.jpg`,
       description: DESCRIPTION[getRandomPositiveInteger(0, DESCRIPTION.length - 1)],
-      likes: getRandomPositiveInteger(15, 200),
-      comments: commentArray(getRandomPositiveInteger(0, 2))
+      likes: getRandomPositiveInteger(MIN_COUNT_LIKE, MAX_COUNT_LIKE),
+      comments: commentArray(getRandomPositiveInteger(COMMENTS_COUNT))
     });
   }
 };
