@@ -1,14 +1,3 @@
-function getRandomNumber(min, max){
-  if (min <= 0 || min >= max){
-    throw 'Invalid arguments';
-  }
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+import { arrayObject } from "./data.js";
 
-getRandomNumber(2, 11);
-
-function checkStringLength(testToString, maxLength){
-  return testToString.length < maxLength;
-}
-
-checkStringLength('qwerty', 45);
+arrayObject()
