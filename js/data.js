@@ -1,4 +1,4 @@
-import { getRandomPositiveInteger } from './util.js';
+import { getRandomArrayElement } from './util.js';
 
 const COUNT = 25;
 const COMMENTS_COUNT = 5;
@@ -56,7 +56,7 @@ const addPhotos = () => {
     arrayObject.push({
       id: i,
       url: `photos/${i + 1}.jpg`,
-      description: DESCRIPTION[getRandomPositiveInteger(0, DESCRIPTION.length - 1)],
+      description: getRandomArrayElement(DESCRIPTION),
       likes: getRandomPositiveInteger(LIKE_COUNT.MIN, LIKE_COUNT.MAX),
       comments: commentArray(getRandomPositiveInteger(COMMENTS_COUNT))
     });

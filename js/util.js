@@ -5,4 +5,6 @@ const getRandomPositiveInteger = (a, b) => {
   return Math.floor(result);
 };
 
-export{getRandomPositiveInteger};
+const getRandomArrayElement = (elements) => elements[getRandomPositiveInteger(0, elements.length - 1)];
+
+export{getRandomArrayElement};
