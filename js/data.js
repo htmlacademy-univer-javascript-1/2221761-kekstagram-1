@@ -6,7 +6,7 @@ const COMMENTS_COUNT = 5;
 const LIKE_COUNT = {
   MIN: 15,
   MAX: 200
-}; 
+};
 const AVATAR_COUNT = {
   MIN: 1,
   MAX: 6
