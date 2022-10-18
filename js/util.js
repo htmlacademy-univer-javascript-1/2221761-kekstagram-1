@@ -5,6 +5,4 @@ const getRandomPositiveInteger = (a, b) => {
   return Math.floor(result);
 };
 
-const checkStringLength = (string, maxLength) => string.length <= maxLength;
-
 export{getRandomPositiveInteger};
