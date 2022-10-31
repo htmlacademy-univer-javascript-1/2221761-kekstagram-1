@@ -1,7 +1,11 @@
+
 import { getRandomPositiveInteger } from './util.js';
 
 const COUNT = 25;
-const COMMENTS_COUNT = 5;
+const COMMENTS_COUNT = {
+  MIN: 0,
+  MAX: 5
+};
 
 const LIKE_COUNT = {
   MIN: 15,
@@ -58,7 +62,7 @@ const addPhotos = () => {
       url: `photos/${i + 1}.jpg`,
       description: DESCRIPTION[getRandomPositiveInteger(0, DESCRIPTION.length - 1)],
       likes: getRandomPositiveInteger(LIKE_COUNT.MIN, LIKE_COUNT.MAX),
-      comments: commentArray(getRandomPositiveInteger(COMMENTS_COUNT))
+      comments: commentArray(getRandomPositiveInteger(COMMENTS_COUNT.MIN, COMMENTS_COUNT.MAX))
     });
   }
 };
