@@ -1,4 +1,3 @@
-
 import { getRandomPositiveInteger } from './util.js';
 
 const COUNT = 25;
