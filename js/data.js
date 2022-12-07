@@ -3,17 +3,19 @@ import { getRandomPositiveInteger } from './util.js';
 const COUNT = 25;
 const COMMENTS_COUNT = {
   MIN: 0,
-  MAX: 5
+  MAX: 33
 };
 
 const LIKE_COUNT = {
   MIN: 15,
   MAX: 200
 };
+
 const AVATAR_COUNT = {
   MIN: 1,
   MAX: 6
 };
+
 const NAMES = [
   'Лука',
   'Эдвард',
