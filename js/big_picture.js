@@ -1,6 +1,6 @@
 import { createComment } from './comments.js';
 import { isEscape } from './util.js';
-import { declineNumber } from './number.js';
+import { declineNumber } from './number_declination.js';
 
 const COMMENTS_STEP = 5;
 
@@ -62,7 +62,7 @@ const onClosingButtonClick = () => {
   closingButton.removeEventListener('click', onClosingButtonClick);
 };
 
-const openBigPicture = (picture) =>{
+const openBigPicture = (picture) => {
   document.body.classList.add('modal-open');
   bigPicture.classList.remove('hidden');
   commentCounter.classList.remove('hidden');

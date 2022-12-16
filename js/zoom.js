@@ -21,8 +21,7 @@ const setCorrectValue = (scaleValue) => {
     return Scale.MIN_VALUE;
   }
 
-  if(scaleValue > Scale.MAX_VALUE)
-  {
+  if(scaleValue > Scale.MAX_VALUE){
     return Scale.MAX_VALUE;
   }
 
