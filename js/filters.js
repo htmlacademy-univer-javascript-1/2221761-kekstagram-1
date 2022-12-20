@@ -15,7 +15,7 @@ const filters = {
 };
 
 const onFilterFormClicked = debounce((evt) => {
-  if(evt.target.tagName === 'BUTTON') {
+  if(evt.target.tagName === 'BUTTON'){
     const selectedButton = filterForm.querySelector('.img-filters__button--active');
 
     if(selectedButton){

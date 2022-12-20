@@ -72,7 +72,6 @@ const setDefaultEffect = () => {
   effectLevel.classList.add('visually-hidden');
   form.querySelector('#effect-none').checked = true;
   image.className = defaultImageClass;
-  image.style.filter = effects.none;
 };
 
 const setEffect = (effect) => {
@@ -100,7 +99,7 @@ const onEffectsListClick = (evt) => {
   }
 };
 
-const onSliderChange = ()=>{
+const onSliderChange = () => {
   effectLevelValue.value = slider.noUiSlider.get();
   setEffect(currentEffect);
 };
